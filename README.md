@@ -161,3 +161,20 @@ This repository is currently maintained by the community.
 The community is expected to help each other.
 
 Please consider sponsoring the maintainers of this project.
+
+## Local development (internal)
+
+> This section documents how to run this project locally in a development environment using Docker Compose and the Makefile helpers used by our internal workflow.
+
+### Pré-requisitos
+
+- Docker + Docker Compose instalados (comando `docker compose`)
+- `make` instalado (para usar os atalhos do `Makefile`)
+- Porta `8001` livre no host (mapeada para `8080` no container NetBox)
+
+### Subir o ambiente
+
+```bash
+make up
+# ou, equivalente:
+# docker compose up -d
